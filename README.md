@@ -3,4 +3,5 @@
 Viikon kouluruoka SDK for JavaScript
 
 ## Links
-* [Documentation](https://developers.kouluruoka.eliasojala.me/) ([source](source))
+
+* [Documentation](https://developers.kouluruoka.eliasojala.me/) ([source](docs))
