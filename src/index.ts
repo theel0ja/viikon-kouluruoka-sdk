@@ -3,7 +3,7 @@
  * https://stackoverflow.com/a/36719911/6451184
  */
 interface ArrayConstructor {
-  from(arrayLike: any, mapFn?, thisArg?): Array<any>;
+  from(arrayLike: any, mapFn?: any, thisArg?: any): Array<any>;
 }
 
 /**
