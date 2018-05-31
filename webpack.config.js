@@ -39,7 +39,8 @@ module.exports = {
   devServer: {
     contentBase: [PUBLIC_FOLDER, DIST_FOLDER],
     compress: true,
-    port: 9000
+    port: 9000,
+    open: true
   },
 
   output: {
