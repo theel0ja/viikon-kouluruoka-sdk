@@ -5,6 +5,7 @@ import "core-js/es6/array"; // IE support (https://stackoverflow.com/a/41907111/
  */
 const test1Elements = document.getElementsByClassName("kouluruoka-test1");
 
-Array.from(test1Elements).forEach((element) => {
+// FIXME: Try to remove this `Array as any`
+(Array as any).from(test1Elements).forEach((element: Element) => {
   element.innerHTML = "foo";
 });
