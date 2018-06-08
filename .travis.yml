@@ -1,0 +1,12 @@
+# Original code: https://github.com/theel0ja/viikon-kouluruoka-frontend/blob/f91ede2c7b6eb1d89d7360cf487f8019b06b1a06/.travis.yml
+language: node_js
+node_js:
+  - "8.5.0"
+
+sudo: false
+
+install:
+  - yarn
+
+script:
+  - yarn build
