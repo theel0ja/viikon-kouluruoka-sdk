@@ -12,7 +12,7 @@ Viikon kouluruoka SDK documentation.
 
 ```html
 <div class="kouluruoka-menu"
-  data-src="https://turku.kouluruoka.eliasojala.me/restaurants/12a315f4-acad-e711-a207-005056820ad4">
+  data-src="https://tampere.kouluruoka.eliasojala.me/restaurants/6b6e81cd-3b72-e511-b1dd-18a9054d8b42">
   Loading <a href="https://kouluruoka.eliasojala.me">Viikon kouluruoka widget</a>.
 </div>
 
@@ -22,7 +22,7 @@ Viikon kouluruoka SDK documentation.
 #### Demo
 
 <div class="kouluruoka-menu"
-  data-src="https://turku.kouluruoka.eliasojala.me/restaurants/12a315f4-acad-e711-a207-005056820ad4">
+  data-src="https://tampere.kouluruoka.eliasojala.me/restaurants/6b6e81cd-3b72-e511-b1dd-18a9054d8b42">
   Loading <a href="https://kouluruoka.eliasojala.me">Viikon kouluruoka widget</a>.
 </div>
 
