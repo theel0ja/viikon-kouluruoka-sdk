@@ -4,6 +4,7 @@ const path = require('path');
 const SRC_FOLDER = path.resolve(__dirname, 'src');
 const DIST_FOLDER = path.resolve(__dirname, 'dist');
 const PUBLIC_FOLDER = path.resolve(__dirname, 'public');
+const NODE_MODULES_FOLDER = path.resolve(__dirname, 'node_modules');
 
 module.exports = {
   entry: {
@@ -12,22 +13,18 @@ module.exports = {
 
   module: {
     rules: [
-      {
-        test: /\.js?$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
-          }
-        }
-      },
+      // ts-loader: convert typescript (es6) to javascript (es6),
+      // babel-loader: converts javascript (es6) to javascript (es5)
       {
         test: /\.tsx?$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'ts-loader',
-        }
+        loaders: [/* 'babel-loader?presets[]=babel-preset-env', */ 'ts-loader'],
+        exclude: [/node_modules/, NODE_MODULES_FOLDER]
+      },
+      // babel-loader for pure javascript (es6) => javascript (es5)
+      {
+        test: /\.(jsx?)$/,
+        loaders: ['babel'],
+        exclude: [/node_modules/, NODE_MODULES_FOLDER]
       }
     ]
   },

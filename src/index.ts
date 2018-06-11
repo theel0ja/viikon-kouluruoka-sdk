@@ -37,8 +37,7 @@ function createIframe(source: string, width?: number | string, height?: number |
  */
 const menuElements = document.querySelectorAll("div[data-src].kouluruoka-menu");
 
-// FIXME: Try to remove this `Array as any`
-(Array as any).from(menuElements).forEach((element: HTMLDivElement) => {
+Array.from(menuElements).forEach((element: HTMLDivElement) => {
 
   // URL in <a> and remove query parameters and fragment
   let sourceUrl = element.dataset.src;
