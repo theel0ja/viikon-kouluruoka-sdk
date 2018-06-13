@@ -6,7 +6,15 @@ title: Viikon kouluruoka Developers site
 
 Viikon kouluruoka SDK documentation.
 
-## Examples
+
+## oEmbed Endpoint
+`https://[SITE]/api/oembed/`
+
+For example:
+* `https://turku.kouluruoka.eliasojala.me/api/oembed/`
+* `https://tampere.kouluruoka.eliasojala.me/api/oembed/`
+
+## SDK Examples
 
 ### Menu
 
