@@ -10,12 +10,17 @@
     "start:dev": "webpack-dev-server --hot --mode=development",
     "build": "webpack --mode=production && yarn tslint",
     "deploy": "wsl ./deploySdk.sh",
-    "tslint": "tslint -c tslint.json -p tsconfig.json"
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
+    "docs:dev": "docz dev --src=./docs",
+    "docs:build": "docz build --src=./docs",
+    "docs:deploy": "gh-pages -d .docz/dist"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
+    "docz": "^0.2.6",
+    "gh-pages": "^1.2.0",
     "ts-loader": "^4.3.0",
     "tslint": "^5.10.0",
     "typescript": "^2.8.3",
