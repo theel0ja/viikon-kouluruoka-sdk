@@ -32,10 +32,12 @@ function createIframe(source: string, width?: number | string, height?: number |
   return element;
 }
 
+const ignoreClass = `kouluruoka-ignore`;
+
 /**
- * Collection of `a.kouluruoka-menu`
+ * Collection of `a.kouluruoka-menu` that do not have the `.${ignoreClass}`
  */
-const menuElements = document.querySelectorAll("div[data-src].kouluruoka-menu");
+const menuElements = document.querySelectorAll(`div[data-src].kouluruoka-menu:not(.${ignoreClass})`);
 
 Array.from(menuElements).forEach((element: HTMLDivElement) => {
 
@@ -60,6 +62,9 @@ Array.from(menuElements).forEach((element: HTMLDivElement) => {
 
   // Remove stuff inside the element
   element.innerText = "";
+
+  // Add .kouluruoka-ignore to the element
+  element.classList.add(ignoreClass);
 
   // Add iframe inside the element
   element.appendChild(iframe);
