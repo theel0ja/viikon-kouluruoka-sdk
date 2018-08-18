@@ -4,6 +4,8 @@ permalink: /
 title: Viikon kouluruoka Developers site
 ---
 
+<a href="https://github.com/theel0ja/viikon-kouluruoka-sdk"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-orange@2x.png" alt="Fork me on GitHub"></a>
+
 Viikon kouluruoka SDK documentation.
 
 
