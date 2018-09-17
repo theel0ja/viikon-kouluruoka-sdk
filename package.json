@@ -8,8 +8,8 @@
   "private": true,
   "scripts": {
     "start:dev": "webpack-dev-server --hot --mode=development",
-    "build": "webpack --mode=production && yarn tslint",
-    "deploy": "wsl ./deploySdk.sh",
+    "build": "webpack --mode=production && yarn tslint && ./addLicenseHeader.sh",
+    "deploy": "./deploySdk.sh",
     "tslint": "tslint -c tslint.json -p tsconfig.json"
   },
   "devDependencies": {

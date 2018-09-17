@@ -41,7 +41,7 @@ module.exports = {
   },
 
   output: {
-    filename: 'bundle.js',
+    filename: 'widgets.js',
     path: DIST_FOLDER
   }
 };
