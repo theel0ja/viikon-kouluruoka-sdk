@@ -7,7 +7,7 @@ function listEndpoints(endpoints) {
     
     const endpointPre = document.createElement("code"); // ul#availableElement -> li -> code
     endpointPre.innerHTML = endpoint.api_url;
-    endpointPre.className "highlighter-rouge"; // github pages markdown
+    endpointPre.className += "highlighter-rouge"; // github pages markdown
     endpointEl.append(endpointPre);
     
     
