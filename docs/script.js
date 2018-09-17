@@ -6,7 +6,7 @@ function listEndpoints(endpoints) {
     
     
     const endpointPre = document.createElement("pre"); // ul#availableElement -> li -> pre
-    endpointPre.innerHTML = endpoint.api_urL;
+    endpointPre.innerHTML = endpoint.api_url;
     endpointEl.append(endpointPre);
     
     
