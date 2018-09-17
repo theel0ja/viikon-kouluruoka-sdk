@@ -10,9 +10,10 @@ function listEndpoints(endpoints) {
     endpointPre.className += "highlighter-rouge"; // github pages markdown
     endpointEl.append(endpointPre);
     
+    endpointEl.innerHTML += "(" + endpoint.name + ")";
+    
     
     availableEndpointsEl.append(endpointEl);
   });
-  
-  console.log(data);
+
 }
