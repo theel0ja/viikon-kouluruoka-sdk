@@ -6,8 +6,12 @@ title: Viikon kouluruoka Developers site
 
 <a href="https://github.com/theel0ja/viikon-kouluruoka-sdk"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-orange@2x.png" alt="Fork me on GitHub"></a>
 
-Viikon kouluruoka SDK documentation.
+Viikon kouluruoka SDK and API documentation.
 
+## API Endpoint
+
+### Available endpoints
+<ul id="availableEndpoints"></ul>
 
 ## oEmbed Endpoint
 `https://[SITE]/api/oembed/`
@@ -37,3 +41,7 @@ For example:
 </div>
 
 <script async src="https://sdk.theel0ja.info/kouluruoka-v1/widgets.js" charset="utf-8"></script>
+
+<!-- Available endpoints -->
+<script src="./script.js"></script>
+<script src="https://turku.kouluruoka.eliasojala.me/api/sites?callback=listEndpoints"></script>
