@@ -10,7 +10,7 @@ function listEndpoints(endpoints) {
     endpointPre.className += "highlighter-rouge"; // github pages markdown
     endpointEl.append(endpointPre);
     
-    endpointEl.innerHTML += "(" + endpoint.name + ")";
+    endpointEl.innerHTML += " (<a href=\"" + endpoint.url + "\">" + endpoint.name + "</a>)";
     
     
     availableEndpointsEl.append(endpointEl);
